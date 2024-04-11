@@ -1,0 +1,264 @@
+.navbar-header {
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+    line-height: 40px;
+    .header-user {
+        float: right;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+
+/* Header middle */
+
+.logo {
+    div {
+        float: left;
+    }
+}
+
+.motto {
+    margin-top: 35px;
+}
+
+.promotion {
+    font-size: 16px;
+    color: #030303;
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+}
+
+.header-search-row {
+    height: 112px;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+.header-bottom-content {
+    height: 50px;
+    background: $dark;
+    .line-menu {
+        line-height: 49px;
+        li {
+            display: inline-block;
+            position: relative;
+            a {
+                color: #fff;
+                display: block;
+                font-weight: 700;
+                height: 50px;
+                word-spacing: 5px;
+                line-height: 50px;
+                padding: 0 20px;
+                text-transform: uppercase;
+                transition: all .3s ease-out 0s;
+                position: relative;
+                margin: 0;
+                &:hover {
+                    background: $darkGrey;
+                    @extend .transition;
+                }
+            }
+            .special {
+                &:hover {
+                    background: $boxYellow !important;
+                }
+            }
+        }
+    }
+}
+
+.category-main {
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    background: $darkGrey none repeat scroll 0 0;
+    color: $white;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+.search-input,
+.categories-search,
+.search-btn {
+    float: left;
+}
+
+.partner-shop {
+    width: auto;
+    float: left;
+}
+
+#search_value {
+    height: 36px;
+    border-radius: 0;
+    line-height: 36px;
+    border: 0;
+    padding-left: 35px;
+    &:focus {
+        border: 0 !important;
+        box-shadow: 0 !important;
+    }
+}
+
+.angucomplete-holder {
+    width: 300px;
+}
+
+.search-btn {
+    button {
+        line-height: 46px;
+        padding: 0;
+        width: 46px;
+        height: 46px;
+        margin-top: -1px;
+    }
+}
+
+.search-contact {
+    padding: 20px 0 5px 0;
+}
+
+.search-email {
+    margin: 0px 5px;
+    border-left: 1px solid #ccc;
+}
+
+.cart {
+    float: right;
+    .cart-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 46px;
+        background: transparent;
+        border: 2px solid $boxYellow;
+        color: $boxYellow;
+        padding: 0;
+        font-size: 25px;
+        position: relative;
+        bottom: 10px;
+        @extend .transition;
+        span {
+            background: $dark none repeat scroll 0 0;
+            border-radius: 10px;
+            color: #fff;
+            display: block;
+            font-size: 10px;
+            height: 17px;
+            line-height: 16px;
+            position: absolute;
+            right: -17px;
+            text-align: center;
+            top: 0;
+            width: 28px;
+        }
+        &:hover {
+            background: transparent;
+        }
+    }
+}
+
+
+/* sticky header */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.sticky-header {
+    background: $dark none repeat scroll 0 0;
+    padding: 0 15px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-duration: .7s;
+    -moz-animation-duration: .7s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+}
+
+.search-nav {
+    float: left;
+    border: 2px solid $dark;
+    position: relative;
+    .category {
+        background: #fff;
+        border: 0;
+        height: 36px;
+        outline: 0;
+    }
+    .search-ico {
+        position: absolute;
+        left: 130px;
+        z-index: 1;
+        line-height: 36px;
+        font-size: 18px;
+        padding: 0 5px;
+        color: rgb(153, 153, 153);
+    }
+}
+
+.search-btn {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    height: 36px;
+    text-transform: uppercase;
+    width: 114px;
+    right: -2px;
+    background: none 0px 0px repeat scroll $dark;
+    transition: all 0.3s ease-out 0s;
+    border: 0;
+    outline: 0;
+}
+
+#logoText {
+    background: url(../public/img/logoScroll.png) no-repeat;
+    height: 100%;
+    background-position: 14px;
+    display: none;
+}

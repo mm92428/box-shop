@@ -1,0 +1,210 @@
+.home-bestselling {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.bestselling-product {
+    padding-left: 0px;
+    padding-right: 0px;   
+}
+
+.home-cat-trend {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.b-title {
+    display: block;
+    color: $golden;
+    border-bottom: 1px solid $golden;
+    line-height: 36px;
+    margin: 5px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.motto-1,
+.motto-2,
+.motto-3 {
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    i {
+        display: block;
+        font-size: 50px;
+        float: left;
+        width: 74px;
+    }
+    span {
+        line-height: 47px;
+    }
+}
+
+.motto-3 {
+    span {
+        line-height: 1 !important;
+    }
+}
+
+.motto-1,
+.motto-2 {
+    border-right: 1px solid $white;
+}
+
+.motto-1,
+.motto-2,
+.motto-3 {
+    color: $white;
+}
+
+.home-motto {
+    background: $boxYellow none repeat scroll 0 0;
+    color: #fff;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.home-advantage {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fafafa;
+    .advantage-bg {
+        height: 140px;
+        width: 140px;
+        text-align: center;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        background-position: center center !important;
+        background-size: cover !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .inner-box {
+        text-align: center;
+        height: 220px;
+    }
+}
+
+
+/*Social bars*/
+
+.social-bars {
+    position: fixed;
+    top: 250px;
+    right: 5px;
+    z-index: 10;
+    backface-visibility: hidden;
+    .fa {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFF;
+        color: rgba(255, 255, 255, 0.8);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        display: block;
+        border-radius: 50%;
+        margin: 10px 0;
+        font-size: 1.8em;
+        &:hover {
+            -webkit-transform: scale(1.1) rotate(360deg);
+            -moz-transform: scale(1.1) rotate(360deg);
+            -ms-transform: scale(1.1) rotate(360deg);
+            -o-transform: scale(1.1) rotate(360deg);
+            transform: scale(1.1) rotate(360deg);
+        }
+    }
+    .fa-facebook {
+        background-color: #3C599F;
+    }
+    .fa-twitter {
+        background-color: #32CCFE;
+    }
+    .fa-youtube {
+        background-color: #C52F30;
+    }
+    .fa-instagram {
+        background-color: #A1755C;
+    }
+    .fa-plus {
+        background-color: $golden;
+    }
+}
+
+
+/* Swiper */
+
+.swiper-container {
+    width: 100%;
+    height: 130px;
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#top i{
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#top:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+#top:hover i{
+    color: #fff;
+    top: 5px;
+}
+
+
+/* Extra Things */
+body{background-image: url(https://subtlepatterns.com/patterns/geometry.png);font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #c6c6c6;}
